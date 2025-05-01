@@ -7,6 +7,9 @@
 Z_TREE(Token*, token_tree)
 
 token_tree * create_token_tree(tokens_vec * postfix_tokens);
+void custom_print(Token * token);
+
+// Old interface
 void print_token_tree(token_tree * tree);
 void print_node_recursive(token_tree_node * node, char * buffer, size_t depth);
 

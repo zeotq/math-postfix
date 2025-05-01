@@ -90,3 +90,9 @@ void print_token_tree(token_tree * tree) {
         printf("Empty!\n");
     }
 }
+
+char buffer[64];
+void custom_print(Token * token) {
+    str_token(buffer, *token);
+    printf("%s", buffer);
+}
